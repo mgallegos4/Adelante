@@ -1,5 +1,5 @@
-# mgallegos4.github.io
-// Hack for Humanity Hackathon Project
+#Adelante
+// Hack for Humanity Hackathon Project 2019 **UPDATED**
 
 We created a tool for schools to distribute to their students to help them in their mission to educate
 their students and prepare them for a brighter future. It also helps schools facilitate their students
