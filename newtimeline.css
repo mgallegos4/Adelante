@@ -12,7 +12,6 @@
 }
 
 .hline-bottom {
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     border-bottom: 2px solid #000;
-    /* whichever color you prefer */
 }
