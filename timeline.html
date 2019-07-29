@@ -1,233 +1,137 @@
+<!--classes soph, junior, senior and anytime control the colors of the headings of each papragraph-->
+<!--tooltip and tooltiptext create the popup when the mouse hovers over the headings-->
+<!--even and odd classes determine if the information will pop up above or below the title-->
+
 <!DOCTYPE html>
-<html lang="en">
-<title>Timeline</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+    <head>
+        <title>Timeline</title>
+        <link rel="stylesheet" type="text/css" href="timeline.css"/>
+    </head>
+    <body>
+        <section class = "timeline">
+            <ol>
+                <li>
+                    <div class = "odd">
+                        <div class = "soph">
+                            <div class="tooltip">
+                                <h3>Taking the PSAT</h3>
+                                <span class = "tooltiptext">
+                                    <p>The PSAT is the practice SAT. Taking it during your sophomore year will help you see where you are at and what skills need to be improved.</p>
+                                </span>           
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-<head>
+                <li>
+                    <div class = "even">
+                        <div class = "anytime">
+                            <div class="tooltip">
+                                <h3>Teachers and Mentors</h3>
+                                <span class = "tooltiptext">
+                                    <p>Get to know your teachers and other mentors. The better they know you, the better they will be able to write you letters of recommendation. 
+                                    We suggest you start in your sophomore year.</p>
+                                </span>           
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            background-color: #D3D3D3;
-            font-family: Helvetica, sans-serif;
-        }
-        /* The actual timeline (the vertical ruler) */
-        
-        .timeline {
-            position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        /* The actual timeline (the vertical ruler) */
-        
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            background-color: white;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
-        }
-        /* Container around content */
-        
-        .container {
-            padding: 10px 40px;
-            position: relative;
-            background-color: inherit;
-            width: 50%;
-        }
-        /* The circles on the timeline */
-        
-        .container::after {
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            right: -17px;
-            background-color: white;
-            border: 4px solid #87CEFA;
-            top: 15px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        /* Place the container to the left */
-        
-        .left {
-            left: 0;
-        }
-        /* Place the container to the right */
-        
-        .right {
-            left: 50%;
-        }
-        /* Add arrows to the left container (pointing right) */
-        
-        .left::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            right: 30px;
-            border: medium solid white;
-            border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent white;
-        }
-        /* Add arrows to the right container (pointing left) */
-        
-        .right::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            left: 30px;
-            border: medium solid white;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent white transparent transparent;
-        }
-        /* Fix the circle for containers on the right side */
-        
-        .right::after {
-            left: -16px;
-        }
-        /* The actual content */
-        
-        .content {
-            padding: 20px 30px;
-            background-color: white;
-            position: relative;
-            border-radius: 6px;
-        }
-        /* Media queries - Responsive timeline on screens less than 600px wide */
-        
-        @media screen and (max-width: 600px) {
-            /* Place the timelime to the left */
-            .timeline::after {
-                left: 31px;
-            }
-            /* Full-width containers */
-            .container {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            /* Make sure that all arrows are pointing leftwards */
-            .container::before {
-                left: 60px;
-                border: medium solid white;
-                border-width: 10px 10px 10px 0;
-                border-color: transparent white transparent transparent;
-            }
-            /* Make sure all circles are at the same spot */
-            .left::after,
-            .right::after {
-                left: 15px;
-            }
-            /* Make all right containers behave like the left ones */
-            .right {
-                left: 0%;
-            }
-        }
-    </style>
-</head>
+                <li>
+                    <div class = "odd">
+                        <div class = "anytime"> 
+                            <div class="tooltip">
+                                <h3>Preparing for SAT/ACT</h3>
+                                <span class = "tooltiptext">
+                                    <p>Prepare for the SAT/ACT. Take prep classes (Khan Academy), do practice tests, also take PSAT for National Merit Scholarship. 
+                                    We recommend you start studying during the summer between your sophomre and junior year.</p>
+                                </span>           
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-<body>
-    <!-- Navbar -->
-    <div class="w3-bar w3-light-blue w3-card w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-light-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
-        <a href="timeline.html" class="w3-bar-item w3-button w3-padding-large w3-white">Timeline</a>
-        <a href="help.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">The "Help!!!" Page</a>
-        <a href="collegeInfo.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">What College is Actually Like</a>
-        <a href="otheroptions.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Other Options to Consider</a>
-        <a href="mapThings.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Maps</a>
-        <a href="submission.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Test</a>
-        <a href="spanishIndex.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Español</a>
-    </div>
-    <div class="timeline">
-        <div class="container left">
-            <div class="content">
-                <h2>Sophomore Year</h2>
-                <p>HELPHELPHELP Take PSAT: Sophomore Year is the practice one to see where you are at. </p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>Sophomore Year</h2>
-                <p>Get to know your teachers and other mentors. The better they know you, the better they will be able to write you letters of recommendation. </p>
-            </div>
-        </div>
-        <div class="container left">
-            <div class="content">
-                <h2>Summer between Sophomore and Junior Year</h2>
-                <p>Prepare for the SAT/ACT. <br/> Take prep classes (Khan Academy), do practice tests, also take PSAT for National Merit Scholarship. </p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>Junior Year</h2>
-                <p>Take first SAT/ACT</p>
-            </div>
-        </div>
-        <div class="container left">
-            <div class="content">
-                <h2>Junior Year</h2>
-                <p>Explore options and figure out what you might want to study. Do research and take classes that you are interested in.</p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>Junior Year</h2>
-                <p>Consider what summer programs/activities you would be interested in. Consider taking summer classes, or a summer job related to something you're interested in. </p>
-            </div>
-        </div>
-        <div class="container left">
-            <div class="content">
-                <h2>Summer between Junior and Senior Year</h2>
-                <p>Research colleges, financial budget and scholarship options</p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>Senior Year</h2>
-                <p>Take second SAT/ACT</p>
-            </div>
-        </div>
-        <div class="container left">
-            <div class="content">
-                <h2>Senior Year</h2>
-                <p>Apply for colleges</p>
-                <p>Fall: Early Decision/Early Action</p>
-                <p>Winter: Regular Decision</p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>Senior Year</h2>
-                <p>Apply for scholarships/financial aid</p>
-                <p>Free Application for Federal Student Aid (FAFSA) Opens October 1st.</p>
-                <p>Application closes June 30, some aid is distributed on first come, first serve.</p>
-            </div>
-        </div>
-    </div>
-    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-        <h1 class="w3-margin w3-xlarge">"It's not about having time. It's about making time."</h1>
-    </div>
+                <li>
+                    <div class = "even">
+                        <div class = "junior">
+                            <div class="tooltip">
+                                <h3>Taking the SAT/ACT</h3>
+                                <span class = "tooltiptext">
+                                    <p>Take your first SAT/ACT during your junior year.</p>
+                                </span>           
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-</body>
+                <li>
+                    <div class = "odd">
+                        <div class = "junior">
+                            <div class="tooltip">
+                                <h3>Your Interests</h3>
+                                <span class = "tooltiptext">
+                                    <p>Spend your junior year exploring options and figuring out what you might want to study. Do research and take classes that you are interested in.
+                                    Also, consider what summer programs/activities, summer classes, or summer jobs are related to what you're interested in.</p>
+                                </span>           
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
+                <li>
+                    <div class = "even">
+                        <div class = "anytime">
+                            <div class="tooltip">
+                                <h3>Research Options</h3>
+                                <span class = "tooltiptext">
+                                    <p>Research colleges, financial budget and scholarship options</p>
+                                </span>           
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class = "odd">
+                        <div class = "anytime">
+                            <div class="tooltip">
+                                <h3>Retaking the SAT/ACT</h3>
+                                <span class = "tooltiptext">
+                                    <p>You can retake the SAT/ACT as many times as you want during your junior or beginning of your senior year.</p>
+                                </span>           
+                            </div>   
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class = "even">
+                        <div class = "senior">
+                            <div class="tooltip">
+                                <h3>Applying for Colleges and Scholarships</h3>
+                                <span class = "tooltiptext">
+                                    <p>There are many deadlines you should be aware of. When applying for colleges, Early Decision/Early Action are due sometime in fall while Regualr Decision is due sometime in winter.
+                                    For aid or scholarships, some are distributed on first come, first serve. Free Application for Federal Student Aid (FAFSA) opens October 1st and closes June 30. 
+                                    </p>
+                                </span>           
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+
+                <li></li>
+            </ol>
+        </section>
+        <div class = "key">
+            <h4>KEY</h4>
+        </div>
+        
+        <ul>
+            <div class = "soph"><li>Sophomore</li></div>
+            <div class = "junior"><li>Junior</li></div>
+            <div class = "senior"><li>Senior</li></div>
+            <div class = "anytime"><li>Anytime</li></div>     
+        </ul>
+    </body>
 </html>
