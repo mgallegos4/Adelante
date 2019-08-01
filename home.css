@@ -1,5 +1,38 @@
+/* body {
+    background-color: #204969;
+} */
+
 h1 {
-    font-family: "Courier New";
-    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    color: #204969;
+    text-align: center;
+}
+
+.about {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center
+}
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-weight: bold;
+}
+
+.info {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #204969;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.button {
     text-align: center;
 }
