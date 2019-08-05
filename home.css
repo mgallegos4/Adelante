@@ -5,8 +5,9 @@
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 150%;
-    color: #204969;
+    color: white;
     text-align: center;
+    background-color: #204969;
 }
 
 .about {
@@ -28,7 +29,7 @@ h1 {
 .info {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: #204969;
+    background-color: white;
     padding-top: 50px;
     padding-bottom: 50px;
 }
