@@ -1,6 +1,7 @@
-/* body {
-    background-color: #204969;
-} */
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #fff7f7;
+}
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
@@ -30,7 +31,6 @@ h1 {
     text-align: center;
     background-color: white;
     padding-top: 25px;
-    padding-bottom: 25px;
     font-size: 30px;
 }
 
