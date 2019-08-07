@@ -5,36 +5,33 @@
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 65px;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: white;
     text-align: center;
     background-color: #204969;
 }
 
-.about {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center
-}
-
 .text {
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
+    font-size: 20px;
 }
 
 .title {
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .info {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     background-color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 30px;
 }
 
 .button {
