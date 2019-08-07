@@ -4,7 +4,9 @@
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 150%;
+    font-size: 65px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     color: white;
     text-align: center;
     background-color: #204969;
@@ -17,7 +19,7 @@ h1 {
 
 .text {
     font-family: 'Courier New', Courier, monospace;
-    text-align: left
+    text-align: left;
 }
 
 .title {
@@ -32,8 +34,14 @@ h1 {
     background-color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+    font-size: 40px;
 }
 
 .button {
+    align-self: center;
+}
+
+div {
     text-align: center;
+    font-size: 50px;
 }
