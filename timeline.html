@@ -3,134 +3,174 @@
 <!--even and odd classes determine if the information will pop up above or below the title-->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Timeline</title>
-        <link rel="stylesheet" type="text/css" href="timeline.css"/>
-    </head>
-    <body>
-        <section class = "timeline">
-            <ol>
-                <li>
-                    <div class = "odd">
-                        <div class = "soph">
-                            <div class="tooltip">
-                                <h3>Taking the PSAT</h3>
-                                <span class = "tooltiptext">
+
+<head>
+    <div id="navbar">
+        <a href="timeline.html">Timeline</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="helppage.html">The Help Page</a>
+        <a href="collegelike.html">Things to Consider in College</a>
+        <a href="otheroptions.html">Other Options</a>
+        <a href="mapThings.html">Maps</a>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <title>Timeline</title>
+    <link rel="stylesheet" type="text/css" href="timeline.css" />
+</head>
+
+<body>
+    <section class="timeline">
+        <ol>
+            <li>
+                <div class="odd">
+                    <div class="soph">
+                        <div class="tooltip">
+                            <h3>Taking the PSAT</h3>
+                            <span class="tooltiptext">
                                     <p>The PSAT is the practice SAT. Taking it during your sophomore year will help you see where you are at and what skills need to be improved.</p>
-                                </span>           
-                            </div>
+                                </span>
                         </div>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li>
-                    <div class = "even">
-                        <div class = "anytime">
-                            <div class="tooltip">
-                                <h3>Teachers and Mentors</h3>
-                                <span class = "tooltiptext">
+            <li>
+                <div class="even">
+                    <div class="anytime">
+                        <div class="tooltip">
+                            <h3>Teachers and Mentors</h3>
+                            <span class="tooltiptext">
                                     <p>Get to know your teachers and other mentors. The better they know you, the better they will be able to write you letters of recommendation. 
                                     We suggest you start in your sophomore year.</p>
-                                </span>           
-                            </div>
+                                </span>
                         </div>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li>
-                    <div class = "odd">
-                        <div class = "anytime"> 
-                            <div class="tooltip">
-                                <h3>Preparing for SAT/ACT</h3>
-                                <span class = "tooltiptext">
+            <li>
+                <div class="odd">
+                    <div class="anytime">
+                        <div class="tooltip">
+                            <h3>Preparing for SAT/ACT</h3>
+                            <span class="tooltiptext">
                                     <p>Prepare for the SAT/ACT. Take prep classes (Khan Academy), do practice tests, also take PSAT for National Merit Scholarship. 
                                     We recommend you start studying during the summer between your sophomre and junior year.</p>
-                                </span>           
-                            </div>
+                                </span>
                         </div>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li>
-                    <div class = "even">
-                        <div class = "junior">
-                            <div class="tooltip">
-                                <h3>Taking the SAT/ACT</h3>
-                                <span class = "tooltiptext">
+            <li>
+                <div class="even">
+                    <div class="junior">
+                        <div class="tooltip">
+                            <h3>Taking the SAT/ACT</h3>
+                            <span class="tooltiptext">
                                     <p>Take your first SAT/ACT during your junior year.</p>
-                                </span>           
-                            </div>
+                                </span>
                         </div>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li>
-                    <div class = "odd">
-                        <div class = "junior">
-                            <div class="tooltip">
-                                <h3>Your Interests</h3>
-                                <span class = "tooltiptext">
+            <li>
+                <div class="odd">
+                    <div class="junior">
+                        <div class="tooltip">
+                            <h3>Your Interests</h3>
+                            <span class="tooltiptext">
                                     <p>Spend your junior year exploring options and figuring out what you might want to study. Do research and take classes that you are interested in.
                                     Also, consider what summer programs/activities, summer classes, or summer jobs are related to what you're interested in.</p>
-                                </span>           
-                            </div>
+                                </span>
                         </div>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li>
-                    <div class = "even">
-                        <div class = "anytime">
-                            <div class="tooltip">
-                                <h3>Research Options</h3>
-                                <span class = "tooltiptext">
+            <li>
+                <div class="even">
+                    <div class="anytime">
+                        <div class="tooltip">
+                            <h3>Research Options</h3>
+                            <span class="tooltiptext">
                                     <p>Research colleges, financial budget and scholarship options</p>
-                                </span>           
-                            </div>
+                                </span>
                         </div>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li>
-                    <div class = "odd">
-                        <div class = "anytime">
-                            <div class="tooltip">
-                                <h3>Retaking the SAT/ACT</h3>
-                                <span class = "tooltiptext">
+            <li>
+                <div class="odd">
+                    <div class="anytime">
+                        <div class="tooltip">
+                            <h3>Retaking the SAT/ACT</h3>
+                            <span class="tooltiptext">
                                     <p>You can retake the SAT/ACT as many times as you want during your junior or beginning of your senior year.</p>
-                                </span>           
-                            </div>   
+                                </span>
                         </div>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li>
-                    <div class = "even">
-                        <div class = "senior">
-                            <div class="tooltip">
-                                <h3>Applying for Colleges and Scholarships</h3>
-                                <span class = "tooltiptext">
+            <li>
+                <div class="even">
+                    <div class="senior">
+                        <div class="tooltip">
+                            <h3>Applying for Colleges and Scholarships</h3>
+                            <span class="tooltiptext">
                                     <p>There are many deadlines you should be aware of. When applying for colleges, Early Decision/Early Action are due sometime in fall while Regualr Decision is due sometime in winter.
                                     For aid or scholarships, some are distributed on first come, first serve. Free Application for Federal Student Aid (FAFSA) opens October 1st and closes June 30. 
                                     </p>
-                                </span>           
-                            </div> 
+                                </span>
                         </div>
                     </div>
-                </li>
+                </div>
+            </li>
 
-                <li></li>
-            </ol>
-        </section>
-        <div class = "key">
-            <h4>KEY</h4>
+            <li></li>
+        </ol>
+    </section>
+    <div class="key">
+        <h4>KEY</h4>
+    </div>
+
+    <ul>
+        <div class="soph">
+            <li>Sophomore</li>
         </div>
-        
-        <ul>
-            <div class = "soph"><li>Sophomore</li></div>
-            <div class = "junior"><li>Junior</li></div>
-            <div class = "senior"><li>Senior</li></div>
-            <div class = "anytime"><li>Anytime</li></div>     
-        </ul>
-    </body>
+        <div class="junior">
+            <li>Junior</li>
+        </div>
+        <div class="senior">
+            <li>Senior</li>
+        </div>
+        <div class="anytime">
+            <li>Anytime</li>
+        </div>
+    </ul>
+</body>
+
 </html>
