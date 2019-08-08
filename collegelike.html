@@ -2,6 +2,35 @@
 <html>
 
 <head>
+    <div id="navbar">
+        <a href="timeline.html">Timeline</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="helppage.html">The Help Page</a>
+        <a href="collegelike.html">Things to Consider in College</a>
+        <a href="otheroptions.html">Other Options</a>
+        <a href="mapThings.html">Maps</a>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
     <title>What College is Actually Like</title>
     <h1 class=headings>Important Things to think about in College</h1>
     <meta charset="UTF-8">
