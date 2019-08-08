@@ -1,394 +1,427 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Testimonials</title>
-        <link rel="stylesheet" type="text/css" href="testimonials.css"/>
-    </head>
 
-    <body>
-        <div class="row">
-            <div class="column">
-                <img src="RachelC.jpg" alt="Rachel C.">
-                <div class="container">
-                    <h3>Rachel C.</h3>
-                    <p>I'm a full-time STEM student at Diablo Valley College who seeks to transfer to a 4-year university. I currently alternate between three part-time jobs at school, at the mall, and at a tutoring center.</p>
-                    <button id="RachelBtn" class="button">Learn More</button>
-                </div>
-                <!-- The Modal -->
-                <div id="RachelModal" class="modal">
+<head>
+    <div id="navbar">
+        <a href="timeline.html">Timeline</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="helppage.html">The Help Page</a>
+        <a href="collegelike.html">Things to Consider in College</a>
+        <a href="otheroptions.html">Other Options</a>
+        <a href="mapThings.html">Maps</a>
+    </div>
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="RachelClose">&times;</span>
-                        <h2>More about Rachel</h2>
-                        <hr>
-                        <p>interview info</p>
-                    </div>
-      
-                </div>
-      
-                <script>
-                    // Get the modal
-                    var RachelModalVar = document.getElementById("RachelModal");
-      
-                    // Get the button that opens the modal
-                    var RachelBtnVar = document.getElementById("RachelBtn");
-      
-                    // Get the <span> element that closes the modal
-                    var RachelSpan = document.getElementsByClassName("RachelClose")[0];
-      
-                    // When the user clicks the button, open the modal 
-                    RachelBtnVar.onclick = function() {
-                        RachelModalVar.style.display = "block";
-                    }
-      
-                    // When the user clicks on <span> (x), close the modal
-                    RachelSpan.onclick = function() {
-                        RachelModalVar.style.display = "none";
-                    }
-                </script>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <title>Testimonials</title>
+    <link rel="stylesheet" type="text/css" href="testimonials.css" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <img src="RachelC.jpg" alt="Rachel C.">
+            <div class="container">
+                <h3>Rachel C.</h3>
+                <p>I'm a full-time STEM student at Diablo Valley College who seeks to transfer to a 4-year university. I currently alternate between three part-time jobs at school, at the mall, and at a tutoring center.</p>
+                <button id="RachelBtn" class="button">Learn More</button>
             </div>
-          
-            <div class="column">
-                <img src="JefferyL.jpeg" alt="Jeffery L." class="rotateimg90">
-                <div class="container">
-                    <h3>Jeffery L.</h3>
-                    <p>After high school, I got my AA degree, joined the work force, went to occupational school, went back to work and am now finishing my BA.</p>
-                    <button id="JefferyBtn" class="button">Learn More</button>
-                </div>
-                <!-- The Modal -->
-                <div id="JefferyModal" class="modal">
+            <!-- The Modal -->
+            <div id="RachelModal" class="modal">
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="JefferyClose">&times;</span>
-                        <h2>More about Jeffery</h2>
-                        <hr>
-                        <p>interview info</p>
-                    </div>
-      
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="RachelClose">&times;</span>
+                    <h2>More about Rachel</h2>
+                    <hr>
+                    <p>interview info</p>
                 </div>
-      
-                <script>
-                    // Get the modal
-                    var JefferyModalVar = document.getElementById("JefferyModal");
-      
-                    // Get the button that opens the modal
-                    var JefferyBtnVar = document.getElementById("JefferyBtn");
-      
-                    // Get the <span> element that closes the modal
-                    var JefferySpan = document.getElementsByClassName("JefferyClose")[0];
-      
-                    // When the user clicks the button, open the modal 
-                    JefferyBtnVar.onclick = function() {
-                        JefferyModalVar.style.display = "block";
-                    }
-      
-                    // When the user clicks on <span> (x), close the modal
-                    JefferySpan.onclick = function() {
-                        JefferyModalVar.style.display = "none";
-                    }
-                </script>
-            </div>
-          
-            <div class="column">
-                <img src="blue_avatar.jpg" alt="Yesenia G.">
-                <div class="container">
-                    <h3>Yesenia G.</h3>
-                    <p>brief describtion</p>
-                    <button id="YeseniaBtn" class="button">Learn More</button>
-                </div>
-                <!-- The Modal -->
-                <div id="YeseniaModal" class="modal">
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="YeseniaClose">&times;</span>
-                        <h2>More about Yesenia</h2>
-                        <hr>
-                        <p>interview info</p>
-                    </div>
-      
-                </div>
-      
-                <script>
-                    // Get the modal
-                    var YeseniaModalVar = document.getElementById("YeseniaModal");
-      
-                    // Get the button that opens the modal
-                    var YeseniaBtnVar = document.getElementById("YeseniaBtn");
-      
-                    // Get the <span> element that closes the modal
-                    var YeseniaSpan = document.getElementsByClassName("YeseniaClose")[0];
-      
-                    // When the user clicks the button, open the modal 
-                    YeseniaBtnVar.onclick = function() {
-                        YeseniaModalVar.style.display = "block";
-                    }
-      
-                    // When the user clicks on <span> (x), close the modal
-                    YeseniaSpan.onclick = function() {
-                        YeseniaModalVar.style.display = "none";
-                    }
-                </script>
             </div>
+
+            <script>
+                // Get the modal
+                var RachelModalVar = document.getElementById("RachelModal");
+
+                // Get the button that opens the modal
+                var RachelBtnVar = document.getElementById("RachelBtn");
+
+                // Get the <span> element that closes the modal
+                var RachelSpan = document.getElementsByClassName("RachelClose")[0];
+
+                // When the user clicks the button, open the modal 
+                RachelBtnVar.onclick = function() {
+                    RachelModalVar.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                RachelSpan.onclick = function() {
+                    RachelModalVar.style.display = "none";
+                }
+            </script>
         </div>
 
-        <div class="row">
-            <div class="column">
-                <img src="SaloniW.jpg" alt="Saloni W.">
-                <div class="container">
-                    <h3>Saloni W.</h3>
-                    <p>I completed 60 units of undergraduate general education coursework in one year after graduating high school at two of my local community colleges. I will now be transferring to UC Santa Cruz as a junior majoring in Politics. I have also been working 10-25 hours per week, depending on the week, as a hostess in a seafood restaurant where I was hired the week after my high school graduation. I continued dancing on a competitive Bollywood team on which I have been a member of for 15 years. I also continued to teach competitive and recreational Bollywood dance teams. </p>
-                    <button id="SaloniBtn" class="button">Learn More</button>
-                </div>
-                <!-- The Modal -->
-                <div id="SaloniModal" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="SaloniClose">&times;</span>
-                        <h2>More about Saloni</h2>
-                        <hr>
-                        <p>interview info</p>
-                    </div>
-      
-                </div>
-      
-                <script>
-                    // Get the modal
-                    var SaloniModalVar = document.getElementById("SaloniModal");
-      
-                    // Get the button that opens the modal
-                    var SaloniBtnVar = document.getElementById("SaloniBtn");
-      
-                    // Get the <span> element that closes the modal
-                    var SaloniSpan = document.getElementsByClassName("SaloniClose")[0];
-      
-                    // When the user clicks the button, open the modal 
-                    SaloniBtnVar.onclick = function() {
-                        SaloniModalVar.style.display = "block";
-                    }
-      
-                    // When the user clicks on <span> (x), close the modal
-                    SaloniSpan.onclick = function() {
-                        SaloniModalVar.style.display = "none";
-                    }
-                </script>
+        <div class="column">
+            <img src="JefferyL.jpeg" alt="Jeffery L." class="rotateimg90">
+            <div class="container">
+                <h3>Jeffery L.</h3>
+                <p>After high school, I got my AA degree, joined the work force, went to occupational school, went back to work and am now finishing my BA.</p>
+                <button id="JefferyBtn" class="button">Learn More</button>
             </div>
-          
-            <div class="column">
-                <img src="blue_avatar.jpg" alt="Gordon H.">
-                <div class="container">
-                    <h3>Gordon H.</h3>
-                    <p>brief describtion</p>
-                    <button id="GordonBtn" class="button">Learn More</button>
-                </div>
-                <!-- The Modal -->
-                <div id="GordonModal" class="modal">
+            <!-- The Modal -->
+            <div id="JefferyModal" class="modal">
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="GordonClose">&times;</span>
-                        <h2>More about Gordon</h2>
-                        <hr>
-                        <p>interview info</p>
-                    </div>
-      
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="JefferyClose">&times;</span>
+                    <h2>More about Jeffery</h2>
+                    <hr>
+                    <p>interview info</p>
                 </div>
-      
-                <script>
-                    // Get the modal
-                    var GordonModalVar = document.getElementById("GordonModal");
-      
-                    // Get the button that opens the modal
-                    var GordonBtnVar = document.getElementById("GordonBtn");
-      
-                    // Get the <span> element that closes the modal
-                    var GordonSpan = document.getElementsByClassName("GordonClose")[0];
-      
-                    // When the user clicks the button, open the modal 
-                    GordonBtnVar.onclick = function() {
-                        GordonModalVar.style.display = "block";
-                    }
-      
-                    // When the user clicks on <span> (x), close the modal
-                    GordonSpan.onclick = function() {
-                        GordonModalVar.style.display = "none";
-                    }
-                </script>
-            </div>
-          
-            <div class="column">
-                <img src="KathyL.JPG" alt="Kathy L." class="rotateimg90">
-                <div class="container">
-                    <h3>Kathy L.</h3>
-                    <p>After high school, I went to San Francisco State University as a Pre-nursing student and after two years, I transferred to Dominican University of California pursuing a degree in Global Public Health and I'm entering my final year.</p>
-                    <button id="KathyBtn" class="button">Learn More</button>
-                </div>
-                <!-- The Modal -->
-                <div id="KathyModal" class="modal">
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="KathyClose">&times;</span>
-                        <h2>More about Kathy</h2>
-                        <hr>
-                        <p>interview info</p>
-                    </div>
-      
-                </div>
-      
-                <script>
-                    // Get the modal
-                    var KathyModalVar = document.getElementById("KathyModal");
-      
-                    // Get the button that opens the modal
-                    var KathyBtnVar = document.getElementById("KathyBtn");
-      
-                    // Get the <span> element that closes the modal
-                    var KathySpan = document.getElementsByClassName("KathyClose")[0];
-      
-                    // When the user clicks the button, open the modal 
-                    KathyBtnVar.onclick = function() {
-                        KathyModalVar.style.display = "block";
-                    }
-      
-                    // When the user clicks on <span> (x), close the modal
-                    KathySpan.onclick = function() {
-                        KathyModalVar.style.display = "none";
-                    }
-                </script>
             </div>
+
+            <script>
+                // Get the modal
+                var JefferyModalVar = document.getElementById("JefferyModal");
+
+                // Get the button that opens the modal
+                var JefferyBtnVar = document.getElementById("JefferyBtn");
+
+                // Get the <span> element that closes the modal
+                var JefferySpan = document.getElementsByClassName("JefferyClose")[0];
+
+                // When the user clicks the button, open the modal 
+                JefferyBtnVar.onclick = function() {
+                    JefferyModalVar.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                JefferySpan.onclick = function() {
+                    JefferyModalVar.style.display = "none";
+                }
+            </script>
         </div>
 
-        <div class="row">
-            <div class="column">
-                <img src="blue_avatar.jpg" alt="Sophia T.">
-                <div class="container">
-                    <h3>Sophia T.</h3>
-                    <p>Brief description</p>
-                    <button id="SophiaBtn" class="button">Learn More</button>
+        <div class="column">
+            <img src="blue_avatar.jpg" alt="Yesenia G.">
+            <div class="container">
+                <h3>Yesenia G.</h3>
+                <p>brief describtion</p>
+                <button id="YeseniaBtn" class="button">Learn More</button>
+            </div>
+            <!-- The Modal -->
+            <div id="YeseniaModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="YeseniaClose">&times;</span>
+                    <h2>More about Yesenia</h2>
+                    <hr>
+                    <p>interview info</p>
                 </div>
 
-                <!-- The Modal -->
-                <div id="SophiaModal" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="SophiaClose">&times;</span>
-                        <h2>More about Sophia</h2>
-                        <hr>
-                        <p>interview info</p>
-                    </div>
-      
-                </div>
-      
-                <script>
-                    // Get the modal
-                    var SophiaModalVar = document.getElementById("SophiaModal");
-      
-                    // Get the button that opens the modal
-                    var SophiaBtnVar = document.getElementById("SophiaBtn");
-      
-                    // Get the <span> element that closes the modal
-                    var SophiaSpan = document.getElementsByClassName("SophiaClose")[0];
-      
-                    // When the user clicks the button, open the modal 
-                    SophiaBtnVar.onclick = function() {
-                        SophiaModalVar.style.display = "block";
-                    } 
-      
-                    // When the user clicks on <span> (x), close the modal
-                    SophiaSpan.onclick = function() {
-                        SophiaModalVar.style.display = "none";
-                    }
-                </script>
             </div>
 
-            <div class="column">
-                <img src="ClaytonF.jpeg" alt="Clayton F.">
-                <div class="container">
-                    <h3>Clayton F.</h3>
-                    <p>I am currently attending University of Nevada, Reno with a major in Computer Science and Engineering</p>
-                    <button id="ClaytonBtn" class="button">Learn More</button>
-                </div>
-                <!-- The Modal -->
-                <div id="ClaytonModal" class="modal">
+            <script>
+                // Get the modal
+                var YeseniaModalVar = document.getElementById("YeseniaModal");
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="ClaytonClose">&times;</span>
-                        <h2>More about Clayton</h2>
-                        <hr>
-                        <p>interview info</p>
-                    </div>
-      
-                </div>
-      
-                <script>
-                    // Get the modal
-                    var ClaytonModalVar = document.getElementById("ClaytonModal");
-      
-                    // Get the button that opens the modal
-                    var ClaytonBtnVar = document.getElementById("ClaytonBtn");
-      
-                    // Get the <span> element that closes the modal
-                    var ClaytonSpan = document.getElementsByClassName("ClaytonClose")[0];
-      
-                    // When the user clicks the button, open the modal 
-                    ClaytonBtnVar.onclick = function() {
-                        ClaytonModalVar.style.display = "block";
-                    }
-      
-                    // When the user clicks on <span> (x), close the modal
-                    ClaytonSpan.onclick = function() {
-                        ClaytonModalVar.style.display = "none";
-                    }
-                </script>
-            </div>
+                // Get the button that opens the modal
+                var YeseniaBtnVar = document.getElementById("YeseniaBtn");
 
-            <div class="column">
-                <img src="blue_avatar.jpg" alt="Madhangi C.">
-                <div class="container">
-                    <h3>Madhangi C.</h3>
-                    <p>brief describtion</p>
-                    <button id="MadhangiBtn" class="button">Learn More</button>
-                </div>
-                <!-- The Modal -->
-                <div id="MadhangiModal" class="modal">
+                // Get the <span> element that closes the modal
+                var YeseniaSpan = document.getElementsByClassName("YeseniaClose")[0];
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="MadhangiClose">&times;</span>
-                        <h2>More about Madhangi</h2>
-                        <hr>
-                        <p>interview info</p>
-                    </div>
-      
-                </div>
-      
-                <script>
-                    // Get the modal
-                    var MadhangiModalVar = document.getElementById("MadhangiModal");
-      
-                    // Get the button that opens the modal
-                    var MadhangiBtnVar = document.getElementById("MadhangiBtn");
-      
-                    // Get the <span> element that closes the modal
-                    var MadhangiSpan = document.getElementsByClassName("MadhangiClose")[0];
-      
-                    // When the user clicks the button, open the modal 
-                    MadhangiBtnVar.onclick = function() {
-                        MadhangiModalVar.style.display = "block";
-                    }
-      
-                    // When the user clicks on <span> (x), close the modal
-                    MadhangiSpan.onclick = function() {
-                        MadhangiModalVar.style.display = "none";
-                    }
-                </script>
-            </div>
+                // When the user clicks the button, open the modal 
+                YeseniaBtnVar.onclick = function() {
+                    YeseniaModalVar.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                YeseniaSpan.onclick = function() {
+                    YeseniaModalVar.style.display = "none";
+                }
+            </script>
         </div>
-    </body>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="SaloniW.jpg" alt="Saloni W.">
+            <div class="container">
+                <h3>Saloni W.</h3>
+                <p>I completed 60 units of undergraduate general education coursework in one year after graduating high school at two of my local community colleges. I will now be transferring to UC Santa Cruz as a junior majoring in Politics. I have also
+                    been working 10-25 hours per week, depending on the week, as a hostess in a seafood restaurant where I was hired the week after my high school graduation. I continued dancing on a competitive Bollywood team on which I have been a member
+                    of for 15 years. I also continued to teach competitive and recreational Bollywood dance teams. </p>
+                <button id="SaloniBtn" class="button">Learn More</button>
+            </div>
+            <!-- The Modal -->
+            <div id="SaloniModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="SaloniClose">&times;</span>
+                    <h2>More about Saloni</h2>
+                    <hr>
+                    <p>interview info</p>
+                </div>
+
+            </div>
+
+            <script>
+                // Get the modal
+                var SaloniModalVar = document.getElementById("SaloniModal");
+
+                // Get the button that opens the modal
+                var SaloniBtnVar = document.getElementById("SaloniBtn");
+
+                // Get the <span> element that closes the modal
+                var SaloniSpan = document.getElementsByClassName("SaloniClose")[0];
+
+                // When the user clicks the button, open the modal 
+                SaloniBtnVar.onclick = function() {
+                    SaloniModalVar.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                SaloniSpan.onclick = function() {
+                    SaloniModalVar.style.display = "none";
+                }
+            </script>
+        </div>
+
+        <div class="column">
+            <img src="blue_avatar.jpg" alt="Gordon H.">
+            <div class="container">
+                <h3>Gordon H.</h3>
+                <p>brief describtion</p>
+                <button id="GordonBtn" class="button">Learn More</button>
+            </div>
+            <!-- The Modal -->
+            <div id="GordonModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="GordonClose">&times;</span>
+                    <h2>More about Gordon</h2>
+                    <hr>
+                    <p>interview info</p>
+                </div>
+
+            </div>
+
+            <script>
+                // Get the modal
+                var GordonModalVar = document.getElementById("GordonModal");
+
+                // Get the button that opens the modal
+                var GordonBtnVar = document.getElementById("GordonBtn");
+
+                // Get the <span> element that closes the modal
+                var GordonSpan = document.getElementsByClassName("GordonClose")[0];
+
+                // When the user clicks the button, open the modal 
+                GordonBtnVar.onclick = function() {
+                    GordonModalVar.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                GordonSpan.onclick = function() {
+                    GordonModalVar.style.display = "none";
+                }
+            </script>
+        </div>
+
+        <div class="column">
+            <img src="KathyL.JPG" alt="Kathy L." class="rotateimg90">
+            <div class="container">
+                <h3>Kathy L.</h3>
+                <p>After high school, I went to San Francisco State University as a Pre-nursing student and after two years, I transferred to Dominican University of California pursuing a degree in Global Public Health and I'm entering my final year.</p>
+                <button id="KathyBtn" class="button">Learn More</button>
+            </div>
+            <!-- The Modal -->
+            <div id="KathyModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="KathyClose">&times;</span>
+                    <h2>More about Kathy</h2>
+                    <hr>
+                    <p>interview info</p>
+                </div>
+
+            </div>
+
+            <script>
+                // Get the modal
+                var KathyModalVar = document.getElementById("KathyModal");
+
+                // Get the button that opens the modal
+                var KathyBtnVar = document.getElementById("KathyBtn");
+
+                // Get the <span> element that closes the modal
+                var KathySpan = document.getElementsByClassName("KathyClose")[0];
+
+                // When the user clicks the button, open the modal 
+                KathyBtnVar.onclick = function() {
+                    KathyModalVar.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                KathySpan.onclick = function() {
+                    KathyModalVar.style.display = "none";
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="blue_avatar.jpg" alt="Sophia T.">
+            <div class="container">
+                <h3>Sophia T.</h3>
+                <p>Brief description</p>
+                <button id="SophiaBtn" class="button">Learn More</button>
+            </div>
+
+            <!-- The Modal -->
+            <div id="SophiaModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="SophiaClose">&times;</span>
+                    <h2>More about Sophia</h2>
+                    <hr>
+                    <p>interview info</p>
+                </div>
+
+            </div>
+
+            <script>
+                // Get the modal
+                var SophiaModalVar = document.getElementById("SophiaModal");
+
+                // Get the button that opens the modal
+                var SophiaBtnVar = document.getElementById("SophiaBtn");
+
+                // Get the <span> element that closes the modal
+                var SophiaSpan = document.getElementsByClassName("SophiaClose")[0];
+
+                // When the user clicks the button, open the modal 
+                SophiaBtnVar.onclick = function() {
+                    SophiaModalVar.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                SophiaSpan.onclick = function() {
+                    SophiaModalVar.style.display = "none";
+                }
+            </script>
+        </div>
+
+        <div class="column">
+            <img src="ClaytonF.jpeg" alt="Clayton F.">
+            <div class="container">
+                <h3>Clayton F.</h3>
+                <p>I am currently attending University of Nevada, Reno with a major in Computer Science and Engineering</p>
+                <button id="ClaytonBtn" class="button">Learn More</button>
+            </div>
+            <!-- The Modal -->
+            <div id="ClaytonModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="ClaytonClose">&times;</span>
+                    <h2>More about Clayton</h2>
+                    <hr>
+                    <p>interview info</p>
+                </div>
+
+            </div>
+
+            <script>
+                // Get the modal
+                var ClaytonModalVar = document.getElementById("ClaytonModal");
+
+                // Get the button that opens the modal
+                var ClaytonBtnVar = document.getElementById("ClaytonBtn");
+
+                // Get the <span> element that closes the modal
+                var ClaytonSpan = document.getElementsByClassName("ClaytonClose")[0];
+
+                // When the user clicks the button, open the modal 
+                ClaytonBtnVar.onclick = function() {
+                    ClaytonModalVar.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                ClaytonSpan.onclick = function() {
+                    ClaytonModalVar.style.display = "none";
+                }
+            </script>
+        </div>
+
+        <div class="column">
+            <img src="blue_avatar.jpg" alt="Madhangi C.">
+            <div class="container">
+                <h3>Madhangi C.</h3>
+                <p>brief describtion</p>
+                <button id="MadhangiBtn" class="button">Learn More</button>
+            </div>
+            <!-- The Modal -->
+            <div id="MadhangiModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="MadhangiClose">&times;</span>
+                    <h2>More about Madhangi</h2>
+                    <hr>
+                    <p>interview info</p>
+                </div>
+
+            </div>
+
+            <script>
+                // Get the modal
+                var MadhangiModalVar = document.getElementById("MadhangiModal");
+
+                // Get the button that opens the modal
+                var MadhangiBtnVar = document.getElementById("MadhangiBtn");
+
+                // Get the <span> element that closes the modal
+                var MadhangiSpan = document.getElementsByClassName("MadhangiClose")[0];
+
+                // When the user clicks the button, open the modal 
+                MadhangiBtnVar.onclick = function() {
+                    MadhangiModalVar.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                MadhangiSpan.onclick = function() {
+                    MadhangiModalVar.style.display = "none";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
 </html>
