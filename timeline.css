@@ -1,46 +1,88 @@
-body{
-    font-family: "Courier New", Courier, monospace;
-    background-color:#fff7f7;
+#navbar {
+    overflow: hidden;
+    background-color: #dadada;
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
 }
 
-.soph{
+
+/* Navbar links */
+
+#navbar a {
+    display: inline-block;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #fff7f7;
+}
+
+.soph {
     color: #00d4c8;
     font-size: 1rem;
 }
 
-.junior{
+.junior {
     color: #00eeb9;
     font-size: 1rem;
 }
 
-.senior{
+.senior {
     color: #00ee91;
     font-size: 1rem;
 }
 
-.anytime{
+.anytime {
     color: #008869;
     font-size: 1rem;
 }
 
-.key{
+.key {
     color: #204969;
     font-size: 1rem;
 }
 
+
 /*creating timeline*/
+
 .timeline {
     white-space: nowrap;
     overflow-x: hidden;
 }
-   
+
 .timeline ol {
     font-size: 0;
     width: 100vw;
     padding: 250px 0;
     transition: all 1s;
 }
-   
+
 .timeline ol li {
     position: relative;
     display: inline-block;
@@ -53,11 +95,11 @@ body{
 .timeline ol li:last-child {
     width: 150px;
 }
-   
+
 .timeline ol li:not(:first-child) {
     margin-left: 0px;
 }
-   
+
 .timeline ol li:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -71,7 +113,9 @@ body{
     background: #204969;
 }
 
+
 /*elements in timeline*/
+
 .timeline ol li div {
     position: absolute;
     left: calc(0% + 7px);
@@ -81,7 +125,7 @@ body{
     background: transparent;
     text-align: center;
 }
-   
+
 .timeline ol li div::before {
     content: '';
     position: absolute;
@@ -96,7 +140,7 @@ body{
     top: -5px;
     transform: translateY(-50%);
 }
-   
+
 .timeline ol li:nth-child(odd) div::before {
     top: 100%;
     border-width: 8px 8px 0 0;
@@ -106,7 +150,7 @@ body{
 .timeline ol li:nth-child(even) div {
     top: calc(100% + 5px);
 }
-   
+
 .timeline ol li:nth-child(even) div::before {
     top: -8px;
     border-width: 8px 0 0 8px;
@@ -118,7 +162,7 @@ body{
     display: inline-block;
 }
 
-.odd .tooltip .tooltiptext{
+.odd .tooltip .tooltiptext {
     visibility: hidden;
     background-color: #DADADA;
     color: #204969;
@@ -126,39 +170,43 @@ body{
     border-radius: 6px;
     padding: 3px 0;
     font-size: 13px;
-  
     /* Position the tooltip to be below*/
     position: absolute;
     z-index: 1;
     width: 400px;
     bottom: 100%;
-    left: 50%; 
-    margin-left: -60px; 
+    left: 50%;
+    margin-left: -60px;
 }
 
+
 /* Show the tooltip text when you mouse over the tooltip container */
-.odd .tooltip:hover .tooltiptext{
+
+.odd .tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
+
 /*bottom arrow*/
+
 .odd .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
+    top: 100%;
+    /* At the bottom of the tooltip */
     left: 15%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: #DADADA transparent transparent transparent;
-  }
+}
 
 .even .tooltip {
     position: relative;
     display: inline-block;
 }
 
-.even .tooltip .tooltiptext{
+.even .tooltip .tooltiptext {
     visibility: hidden;
     background-color: #DADADA;
     color: #204969;
@@ -166,26 +214,30 @@ body{
     border-radius: 6px;
     padding: 3px 0;
     font-size: 13px;
-  
     /* Position the tooltip to be below*/
     position: absolute;
     z-index: 1;
     width: 400px;
     top: 100%;
-    left: -80%; 
-    margin-left: -60px; 
+    left: -80%;
+    margin-left: -60px;
 }
 
+
 /* Show the tooltip text when you mouse over the tooltip container */
-.even .tooltip:hover .tooltiptext{
+
+.even .tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
+
 /*top arrow*/
+
 .even .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
-    bottom: 100%;  /* At the top of the tooltip */
+    bottom: 100%;
+    /* At the top of the tooltip */
     left: 65%;
     margin-left: -5px;
     border-width: 5px;
