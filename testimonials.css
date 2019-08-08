@@ -1,17 +1,59 @@
-body{
+#navbar {
+    overflow: hidden;
+    background-color: #dadada;
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+
+/* Navbar links */
+
+#navbar a {
+    display: inline-block;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+body {
     font-family: "Courier New", Courier, monospace;
-    background-color:#08ffc8;
+    background-color: #08ffc8;
     text-align: center;
 }
 
-.row{
+.row {
     text-align: center;
-    background-color:#DADADA;
+    background-color: #DADADA;
     margin-right: 80px;
     margin-left: 80px;
 }
 
+
 /* Three columns side by side */
+
 .column {
     width: 30%;
     margin-top: 16px;
@@ -21,19 +63,24 @@ body{
     /*padding: 8px 8px;*/
     display: inline-table;
 }
-  
+
+
 /* Some left and right padding inside the container */
+
 .container {
     padding: 5px 5px;
 }
-  
+
+
 /* Clear floats */
-.container::after, .row::after {
+
+.container::after,
+.row::after {
     content: "";
     clear: both;
     display: table;
 }
-  
+
 .button {
     border: none;
     outline: 0;
@@ -46,47 +93,64 @@ body{
     width: 50%;
     font-family: "Courier New", Courier, monospace;
 }
-  
+
 .button:hover {
     background-color: #204969;
 }
 
-img{
+img {
     border-radius: 50%;
     height: 200px;
     width: 53%;
 }
 
+
 /*for images that need rotation*/
+
 .rotateimg90 {
-    -webkit-transform:rotate(90deg);
+    -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
-p{
+p {
     padding: 0px;
 }
 
+
 /*POPUP*/
+
+
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
-  
+
+
 /* Modal Content */
+
 .modal-content {
     background-color: #204969;
     margin: auto;
@@ -94,28 +158,34 @@ p{
     width: 80%;
     color: #fff7f7;
 }
-  
+
+
 /* The Close Button */
+
 .SophiaClose {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .SophiaClose:hover,
 .SophiaClose:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-  
+
+
 /* The Close Button */
+
 .MadhangiClose {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .MadhangiClose:hover,
 .MadhangiClose:focus {
     color: #000;
@@ -123,13 +193,16 @@ p{
     cursor: pointer;
 }
 
+
 /* The Close Button */
+
 .KathyClose {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-} 
+}
+
 .KathyClose:hover,
 .KathyClose:focus {
     color: #000;
@@ -143,6 +216,7 @@ p{
     font-size: 28px;
     font-weight: bold;
 }
+
 .GordonClose:hover,
 .GordonClose:focus {
     color: #000;
@@ -156,6 +230,7 @@ p{
     font-size: 28px;
     font-weight: bold;
 }
+
 .SaloniClose:hover,
 .SaloniClose:focus {
     color: #000;
@@ -169,6 +244,7 @@ p{
     font-size: 28px;
     font-weight: bold;
 }
+
 .ClaytonClose:hover,
 .ClaytonClose:focus {
     color: #000;
@@ -182,6 +258,7 @@ p{
     font-size: 28px;
     font-weight: bold;
 }
+
 .YeseniaClose:hover,
 .YeseniaClose:focus {
     color: #000;
@@ -195,6 +272,7 @@ p{
     font-size: 28px;
     font-weight: bold;
 }
+
 .JefferyClose:hover,
 .JefferyClose:focus {
     color: #000;
@@ -208,6 +286,7 @@ p{
     font-size: 28px;
     font-weight: bold;
 }
+
 .RachelClose:hover,
 .RachelClose:focus {
     color: #000;
