@@ -89,7 +89,8 @@
         float: left;
         color: black;
         text-align: center;
-        padding: 2px;
+        padding: 0px;
+        margin: 0px;
         text-decoration: none;
     }
     /* The sticky class is added to the navbar with JS when it reaches its scroll position */
