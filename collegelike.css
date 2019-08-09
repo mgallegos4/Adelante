@@ -91,7 +91,8 @@ p {
     float: left;
     color: black;
     text-align: center;
-    padding: 2px;
+    padding: 0px;
+    margin: 0px;
     text-decoration: none;
 }
 
