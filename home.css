@@ -60,7 +60,7 @@ div {
 
 #navbar a {
     display: inline-block;
-    float: left;
+    float: none;
     color: black;
     text-align: center;
     padding: 0px;
